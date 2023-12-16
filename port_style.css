@@ -218,6 +218,45 @@ img {
     background-color: lightcyan;
 }*/
 
+@media only screen and (max-width: 768px) {
+            /* Adjust styles for smaller screens */
+            header {
+                height: auto;
+            }
+
+            .naming {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .right img {
+                width: 100%;
+                max-width: 300px;
+            }
+
+            .about span,
+            .project span,
+            .contact h2 {
+                font-size: 3em;
+            }
+
+            .project-part {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .project-card {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
+            footer {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+
 
 
 
