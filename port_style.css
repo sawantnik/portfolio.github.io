@@ -1,194 +1,266 @@
-*{
-    box-sizing: border-box;
-}
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Quicksand&family=Roboto:wght@400;700&display=swap');
 
-header{
+    *{
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+    }
 
-   height: 100vh;
-   width: 100%;
-   font-family: sans-serif;
-   margin-bottom: opx;
-
-}
-
-nav{
-    width: 100%;
-    height: 100px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.logo{
-    font-size: 3em;
-}
-
-.logo span{
-    color: skyblue;
-}
-
-.menu a{
-    text-decoration: none;
-    color: black;
-    padding: 10px 20px;
-
-}
-
-.menu a:hover{
-    background-color:gainsboro;
-    color: brown;
-}
-
-
-
-.naming{
-    width: 100%;
-    height: 70%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.naming h1{
-    font-size: 5em;
-    margin: 0px;
-    font-family: sans-serif;
-}
-
-.left p{
-    font-size: 2em;
-    margin: 0px;
-}
-.left span{
-    color:chocolate;
-}
-
-.about span{
-
-    float:left;
-    font-size: 5em;
-    font-family: font-family: 'Roboto Slab', serif;;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+     :root{
+        --primary-text-color: #183b56;
+        --secondary-text-color: #577592;
+        --accent-color: #2294ed;
+        --accent-color-dark: #1d69a3;
+        --padding-inline-section: 20px;
+    }
     
-    padding: 5px;
-    border-radius:5px;
-}
-
-.about p{
-    font-family: sans-serif;
-    font-size: 2em;
-    text-align: center;
-    margin: 0px;
+    html{
+        scroll-behavior: smooth;
+     
+       
+    }
     
-    border-radius:8px;
-    display: block;
-    
+
+    body{
+        font-family: 'poppins', 'sans-serif';
+     
+    }
+    h1{
+        font-size: 3rem;
+    }
+
+    h2{
+        font-size: 2rem;
+    }
+
+    h3{
+        font-size: 1.5rem;
+    }
+
+    p{
+        font-family: 'roboto', 'sans-serif';
+        font-size: 1.25rem;
+    }
+
+    a{
+        text-decoration: none;
+        display: flex;
+    }
+
+    ul{
+        list-style: none ;
+    }
+
+    .container {
+    max-width: 1180px;
+    margin-inline: auto;
+    padding-inline: var(--padding-inline-section);
+    overflow: hidden;
 }
 
+    .logo{
+        font-size: 3em;
+    }
 
+    .logo span{
+        color: skyblue;
+    }
 
-.project span{
-    width: 100%;
-    font-size: 5em;
-    font-family: font-family: 'Roboto Slab', serif;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 5px;
-    
-    
-}
+    .flex{
+        display: flex;
+        align-items: center;
+    }
 
+    .main-nav{
+        margin-top: 20px;
+        justify-content: space-between;
+    }
 
+    .nav-links ul{
+        justify-content: end;
+        gap:40px;
 
-.project-card {
-    width: 15rem;
-    height: 20rem;
-    margin: 0%;
-    box-shadow: 0.5rem 0.5rem 2rem grey;
-   
-}
+    }
 
-.project-cards {
-    width: 15rem;
-    height: 20rem;
-    margin: 0%;
-    box-shadow: 0.5rem 0.5rem 2rem grey;
-   
-}
+    .menu-link{
+        color: var(--primary-text-color);
+    }
 
-.subtext{
-    font-weight: bold;
-    text-align: center;
-    font-family: sans-serif;
-}
+    .menu-link:hover{
+        color: var(--accent-color);
+    }
 
-.project-card p{
-        font-weight: bold;
-        font-family: sans-serif;
+    header {
+    padding: 50px var(--padding-inline-section) 0;
+    }
+
+    .header-section {
+    justify-content: center;
+    gap: 50px;
+    }
+
+    .right{
+        justify-content: flex-end;
+    }
+
+    .about-section{
+        margin-top: 50px;
         
-            
+        justify-content: center;
+       
+    }
 
-}
-.project-card h3{
+    
+
+    
+
+    .project {
     text-align: center;
-    margin: 0%;
-}
-img {
-    overflow-clip-margin: content-box;
-    overflow: clip;
-    margin-left: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
-.project-part{
-    
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    
-}
-
-.contact h2{
-    font-size: 3em;
-    font-family: font-family: 'Roboto Slab', serif;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 5px;
-    margin-bottom:0%;
-    
-}
- 
-.contact h4{
- 
-    
-    color:white;
-    font-size: 2em;
-    font-family: sans-serif;
-    text-align: center;
-    
-}
-
-.contactme{
-    background-color: black;
-    color:azure;
-    
-
-    
-
-}
-
-.logos{
-    padding:0px;
-    float: left;
-    margin: 0px 0px;
-    cursor: pointer;
+.project h1 {
+  
+    display: inline-block; 
+    padding: 10px; 
+    border-radius: 8px; 
 }
 
 
+   
+
+    .project-card1{
+        width: 20rem;
+    height: 22rem;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    box-shadow: 0.5rem 0.5rem 2rem grey;
+    transition: transform 0.5s ease;
+    }
+
+    
+
+    .project-image{
+        margin-left: 80px;
+    }
+
+    .project-images{
+        margin-bottom: 35px;
+    }
+
+    .login-register{
+        margin-left: 25px;
+        margin-bottom: 10px;
+    }
+
+    .subtext{
+        margin-left: 25px ;
+    }
+
+    .project-card2{
+        width: 20rem;
+        height: 22rem;
+        margin-top: 20px;
+        margin-bottom: 40px;
+        box-shadow: 0.5rem 0.5rem 2rem grey;
+        transition: transform 0.5s ease;
+
+    }
+
+    .project-card2 img{
+        margin-left: 80px;
+    }
+
+    .flight-book-name{
+        margin-left: 25px;
+        margin-bottom: 10px;
+        
+    }
+
+    .subtext2 {
+        margin-left: 25px;
+    }
+
+    .projectpart{
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+    }
+
+
+    .conatct-section  {
+       
+     
+        
+
+        margin-top: 20px;
+       text-align: center;
+    }
+
+    .fa-solid{
+        padding: 5px;
+    }
+
+    .contact-name2{
+        margin-top: 10px;
+        font-size:1em ;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    }
+
+    .logo{
+        justify-content: center;
+        gap: 20px;
+        padding-inline: 10px;
+        margin-top: 10px;
+    }
+
+    .logo i{
+        font-size:2rem;
+    }
+/*media query for width:375px,688px*/
+
+    @media (max-width:376px){
+        h1{
+        font-size: 2rem;
+    }
+
+    h2{
+        font-size: 1rem;
+    }
+
+    h3{
+        font-size: 1rem;
+    }
+
+    .main-nav .logo {
+        font-size: 2em;
+    }
 
 
 
+    .header-section{
+        font-size: 1em;
+        width: 300px;
+        
+        flex-direction: column;
+    }
 
+    .nav-links ul{
+        flex-direction: column;
+        gap:0px;
+    }
+
+   
+
+   
+
+  
+
+    .projectpart{
+        flex-wrap: wrap;
+    }
+
+   
+
+    }
